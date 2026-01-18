@@ -1,13 +1,19 @@
 import { useEffect } from 'react'
-import { asyncgetproducts } from './store/userAction.jsx'
+import Navbar from './pages/Navbar'
+import Shoproutes from './routes/shop.routes'
+
 
 function App() {
  
-  useEffect(()=>{
-  asyncgetproducts()
-  })
+ 
   return (
-    <div>App</div>
+<>
+<Navbar />
+    <div className='w-full h-[100vh] bg-gray-800 text-white font-thin flex flex-col items-center justify-center'>
+      
+      <Shoproutes/>
+    </div>
+    </>
   )
 }
 

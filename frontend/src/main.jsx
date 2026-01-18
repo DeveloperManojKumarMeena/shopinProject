@@ -2,13 +2,21 @@ import { BrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import { store } from "./store/Store.jsx";
-import { Provider } from "react-redux";
+import Shoproutes from "./routes/shop.routes.jsx";
+import Navbar from "./pages/Navbar.jsx";
+
+
+
 
 createRoot(document.getElementById("root")).render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
+
+    
+      <BrowserRouter>
+      
+      <App/>
+     
+      </BrowserRouter>
+     
+   
+ ,
 );
