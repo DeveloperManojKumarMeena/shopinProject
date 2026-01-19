@@ -17,7 +17,7 @@ function Login() {
         <p className='border px-3 py-1 rounded-2xl'>Log in</p>
         <input className='border-b w-80 mt-2' {...register('username')} type="text" placeholder='Jone-Doe' />
         <input className='border-b w-80 mt-2'{...register('password')} type="passsword" placeholder='Password' />
-        <button className='bg-blue-400 px-3 py-1 mt-5 rounded-2xl'>Login</button>
+        <button className='bg-blue-400 px-3 py-1 mt-5 rounded-2xl font-semibold'>Login</button>
        <p>Not a Member ? <NavLink to={'/register'} className='text-blue-400 '>Register Here</NavLink></p>
     </form>
   )
