@@ -15,13 +15,13 @@ function Register() {
   } = useForm();
 
   const dispatch = useDispatch()
-  const notify = (data) => toast(`${data.username} register Successfully`);
+  const notify = (data) => toast.success(`${data.username} register Successfully`);
 
   const registerhandle =(data)=>{
     data.id = nanoid()
     const res =dispatch(registerUser(data))
     notify(data)
-    navigate('/')
+    navigate('/login')
   }
 
   return (<>

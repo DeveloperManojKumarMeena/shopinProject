@@ -1,5 +1,8 @@
 import { useForm } from 'react-hook-form';
-import { NavLink } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { loginUser } from '../store/actions/userAction';
+import { toast } from 'react-toastify';
 
 function Login() {
     
@@ -7,9 +10,14 @@ function Login() {
     register,
     handleSubmit,
   } = useForm();
+  const dispatch = useDispatch()
+   const notify = (data) => toast.success(`${data.username} Welcome Back`);
+    const Navigate = useNavigate()
 
-  const loginhandle = (data)=>{
-    console.log(data)
+  const loginhandle = (user)=>{
+   const res = dispatch(loginUser(user))
+    console.log(res)
+    
   }
 
   return (
