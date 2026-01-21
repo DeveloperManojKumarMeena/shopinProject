@@ -3,6 +3,7 @@ import Navbar from './pages/Navbar'
 import Shoproutes from './routes/shop.routes'
 import { currentUser } from './store/actions/userAction'
 import { useDispatch } from 'react-redux'
+import { fetchProduct } from './store/actions/productAction'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   const dispatch = useDispatch()
    useEffect(()=>{
   dispatch(currentUser())
+  dispatch(fetchProduct())
  })
  
   return (

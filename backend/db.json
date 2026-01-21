@@ -25,7 +25,7 @@
       "password": "123"
     }
   ],
-  "Products": [
+  "products": [
     {
       "id": "1",
       "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -37,6 +37,38 @@
         "rate": 3.9,
         "count": 120
       }
+    },
+    {
+      "id": "rT0XlB3KtVpuXL-FJ2au6",
+      "image": "https://uniquec.com/wp-content/uploads/235.jpg",
+      "title": "Mouse",
+      "price": "250",
+      "description": "it's a wornder ful mouse",
+      "category": "electronics"
+    },
+    {
+      "id": "39vP2AjfY95Dko6BW6sXC",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0XsrAzcXVcG-xLplbdA6g94-DZgxQgnFn8g&s",
+      "title": "Monitor",
+      "price": "1999",
+      "description": "full hd mointor for pro users",
+      "category": "electronics"
+    },
+    {
+      "id": "Gvorweoql4AdcoEeYxvAj",
+      "image": "https://m.media-amazon.com/images/I/51WZcD8VEyL._AC_UF1000,1000_QL80_.jpg",
+      "title": "Silver CPU Cabinet",
+      "price": "2499",
+      "description": "best silver color cpu cabinete",
+      "category": "electronics"
+    },
+    {
+      "id": "0Jv1JvhZNTbfqlgr3hXm7",
+      "image": "https://5.imimg.com/data5/HX/PV/MY-7526242/network-router-500x500.jpg",
+      "title": "Router 5G",
+      "price": "1499",
+      "description": "it's 5G Router for fast Internet",
+      "category": "electronics"
     }
   ],
   "cart": []
